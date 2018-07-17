@@ -1,0 +1,5 @@
+new project
+npm init
+using jest so run command npm install --save-dev jest
+https://jestjs.io/docs/en/getting-started.html
+
