@@ -2,4 +2,6 @@ new project
 npm init
 using jest so run command npm install --save-dev jest
 https://jestjs.io/docs/en/getting-started.html
-
+circleci.com
+add project, start building
+in github, protect master branch under branches
