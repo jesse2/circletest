@@ -18,7 +18,6 @@ jobs:
     machine:
       enabled: true
     steps:
-      - checkout
       - run:
         name: Deploy to node
         command: |
