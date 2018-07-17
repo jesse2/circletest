@@ -14,5 +14,5 @@ jobs:
       - run: npm test
       - deploy:
           name: nodedeploy
-          command: pwd
+          command: pwd; ls
 
