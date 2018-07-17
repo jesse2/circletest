@@ -12,14 +12,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
-    
-
-  deploy:
-    machine:
-      enabled: true
-    steps:
-      - run:
-        name: Deploy to node
-        command: |
-          ./deploy.sh
+      - deploy:
+        name: nodedeploy
+        command: ./deploy.sh
 
