@@ -14,7 +14,7 @@ jobs:
       - run: npm test
       - run:
           name: create tar
-          command: tar --exclude="node_modules" -czvf ~/wm.tar.gz .
+          command: tar --exclude=".git" --exclude="node_modules" -czvf ~/wm.tar.gz .
       - add_ssh_keys:
           fingerprints:
             - "f5:4a:23:af:4e:b6:55:9e:69:b6:bb:c4:e3:ce:f1:02"
