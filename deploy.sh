@@ -19,7 +19,7 @@ ssh -oStrictHostKeyChecking=no "circleci"@"54.197.6.18" /bin/bash <<EOF
     cd nodeapp
     echo -e "\nItems in directory"
     tar -xzvf "wm.tar.gz"
-    rm -f wm.tar.gz
+    rm -rf wm.tar.gz >> /dev/null
     ls
 
 EOF
