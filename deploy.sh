@@ -14,10 +14,11 @@ ssh -oStrictHostKeyChecking=no "circleci"@"54.197.6.18" /bin/bash <<EOF
     echo -e "Successfully SSH'd into server"
     echo -e "Current Server Directory: "
     pwd
+    mkdir -p nodeapp
+    mv wm.tar.gz /nodeapp/wm.tar.gz
+    cd nodeapp
     echo -e "\nItems in directory"
     ls
-    mkdir -p nodeapp
-    cd nodeapp
     tar -xzf "wm.tar.gz"
     ls
 
