@@ -15,7 +15,7 @@ ssh -oStrictHostKeyChecking=no "circleci"@"54.197.6.18" /bin/bash <<EOF
     echo -e "Current Server Directory: "
     pwd
     mkdir -p nodeapp
-    mv wm.tar.gz /nodeapp/wm.tar.gz
+    mv wm.tar.gz nodeapp/wm.tar.gz
     cd nodeapp
     echo -e "\nItems in directory"
     ls
