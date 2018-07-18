@@ -20,5 +20,6 @@ ssh -oStrictHostKeyChecking=no "circleci"@"54.197.6.18" /bin/bash <<EOF
     echo -e "\nItems in directory"
     tar -xzvf "wm.tar.gz"
     rm wm.tar.gz
+    ls
 
 EOF
