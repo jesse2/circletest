@@ -18,8 +18,7 @@ ssh -oStrictHostKeyChecking=no "circleci"@"54.197.6.18" /bin/bash <<EOF
     mv wm.tar.gz nodeapp/wm.tar.gz
     cd nodeapp
     echo -e "\nItems in directory"
-    ls
     tar -xzvf "wm.tar.gz"
-    ls
+    rm wm.tar.gz
 
 EOF
