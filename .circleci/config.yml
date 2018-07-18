@@ -15,6 +15,7 @@ jobs:
       - run:
           name: erase folder
           command: cd ../;rm -rf project;
+      - checkout
       - add_ssh_keys:
           fingerprints:
             - "f5:4a:23:af:4e:b6:55:9e:69:b6:bb:c4:e3:ce:f1:02"
