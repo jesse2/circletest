@@ -23,7 +23,7 @@ jobs:
           command: sudo apt update && sudo apt install python-dev && sudo apt install python-setuptools && sudo apt install python-pip
       - run:
           name: install paramiko
-          command: sudo pip install -U cffi && sudo pip install paramiko
+          command: sudo pip install -U cffi && sudo pip install -U setuptools && sudo pip install paramiko
       - deploy:
           name: nodedeploy
           command: python deploy.py
