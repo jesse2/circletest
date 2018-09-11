@@ -23,7 +23,7 @@ jobs:
           command: sudo apt-get update && sudo apt-get install -qq -y python-pip libpython-dev
       - run:
           name: check pip version
-          command: pip --version && sudo pip install paramiko
+          command: python --version && pip --version && sudo pip install paramiko
       - deploy:
           name: nodedeploy
           command: ython deploy.py
