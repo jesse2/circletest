@@ -20,7 +20,7 @@ jobs:
             - "f5:4a:23:af:4e:b6:55:9e:69:b6:bb:c4:e3:ce:f1:02"
       - run:
           name: update python
-          command: sudo apt update && sudo apt install python-dev && sudo apt install python-setuptools && sudo apt install python-pip
+          command: sudo apt-get update && sudo apt-get install python-dev && sudo apt-get install python-setuptools && sudo apt-get install python-pip
       - run:
           name: check pip version
           command: pip --version
