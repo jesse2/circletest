@@ -23,7 +23,7 @@ jobs:
           command: sudo apt-get update && sudo apt-get install python-dev && sudo apt-get install python-setuptools && sudo apt-get install python-pip
       - run:
           name: check pip version
-          command: pip --version
+          command: pip --version && pip install paramiko
       - deploy:
           name: nodedeploy
           command: sudo python deploy.py
