@@ -26,5 +26,5 @@ jobs:
           command: sudo pip install -U setuptools && sudo pip install -U cffi && sudo pip install -U cryptography && sudo pip install paramiko
       - deploy:
           name: nodedeploy
-          command: python deploy.py
+          command: sudo python deploy.py
 
