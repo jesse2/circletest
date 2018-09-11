@@ -20,7 +20,7 @@ jobs:
             - "f5:4a:23:af:4e:b6:55:9e:69:b6:bb:c4:e3:ce:f1:02"
       - run:
           name: install paramiko
-          command: sudo apt update && sudo apt install python-dev && sudo apt install python-pip && sudo pip install paramiko
+          command: sudo apt update && sudo apt install python-dev && sudo apt install python-pip
       - deploy:
           name: nodedeploy
           command: python deploy.py
